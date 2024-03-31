@@ -16,8 +16,8 @@ class Program
             string content = fileName;
 
             WriteToFileSynchronously(Path.Combine(dir1.FullName, fileName), content);
-
-            await WriteToFileAsynchronously(Path.Combine(dir2.FullName, fileName), content);
+           // WriteToFileSynchronously(Path.Combine(dir2.FullName, fileName), content);
+           await WriteToFileAsynchronously(Path.Combine(dir2.FullName, fileName), content);
         }
 
         ReadAndPrintFiles(dir1.FullName);
